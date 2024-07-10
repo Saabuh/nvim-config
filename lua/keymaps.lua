@@ -14,8 +14,15 @@ local function toggle_tree()
   end
 end
 
+local function toggle_todo()
+  vim.cmd ':TodoTelescope'
+end
+
 -- Opening nvim-tree
 vim.keymap.set('n', '<leader>l', toggle_tree, { desc = 'Open Explorer' })
+
+-- Opening Todo list via Telescope
+vim.keymap.set('n', '<leader>L', toggle_todo, { desc = 'Open Todo List' })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
