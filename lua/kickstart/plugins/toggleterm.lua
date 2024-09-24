@@ -5,7 +5,7 @@ return {
     version = '*',
     opts = {
       open_mapping = [[<c-\>]],
-      direction = 'float',
+      direction = 'horizontal',
     },
   },
 }

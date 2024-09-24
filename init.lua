@@ -1,9 +1,13 @@
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.g.mkdp_browser = 'Safari'
+
+vim.wo.relativenumber = true
 -- disable netrw at the very start of your init.lua (for nvim-tree)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

@@ -50,6 +50,12 @@ require('lazy').setup({
 
   require 'kickstart/plugins/kanagawa',
 
+  require 'kickstart/plugins/render-markdown',
+
+  require 'kickstart/plugins/markdown-preview',
+
+  require 'kickstart/plugins/obsidian',
+
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
   require 'kickstart.plugins.debug',
