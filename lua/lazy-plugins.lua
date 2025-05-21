@@ -48,7 +48,17 @@ require('lazy').setup({
 
   require 'kickstart/plugins/toggleterm',
 
-  require 'kickstart/plugins/kanagawa',
+  -- require 'kickstart/plugins/kanagawa',
+
+  -- require 'kickstart/plugins/gruvbox',
+
+  require 'kickstart/plugins/rosepine',
+
+  require 'kickstart/plugins/blackmetal',
+
+  -- require 'kickstart/plugins/oxocarbon',
+  --
+  -- require 'kickstart/plugins/zenbones',
 
   require 'kickstart/plugins/render-markdown',
 

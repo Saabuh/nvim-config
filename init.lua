@@ -5,6 +5,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.o.background = 'dark'
+
 vim.g.mkdp_browser = 'Safari'
 
 vim.wo.relativenumber = true
@@ -19,6 +21,11 @@ vim.g.have_nerd_font = true
 vim.g.python3_host_prog = 'C:/Users/natha/Desktop/Code/python-projects/project-1/Scripts/python.exe'
 
 vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { 'ExtraGroup' })
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'javascript', 'css' },
+  command = 'setlocal tabstop=2 shiftwidth=2 expandtab',
+})
 
 -- Fixes Telescope Prompt Colours
 vim.api.nvim_create_autocmd('VimEnter', {
@@ -40,5 +47,7 @@ require 'lazy-bootstrap'
 -- [[ Configure and install plugins ]]
 require 'lazy-plugins'
 
+-- ColorScheme default
+vim.cmd 'colorscheme rose-pine-moon'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
