@@ -48,6 +48,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/toggleterm',
 
+  require 'kickstart/plugins/nightfox',
+
   -- require 'kickstart/plugins/kanagawa',
 
   -- require 'kickstart/plugins/gruvbox',
@@ -62,9 +64,9 @@ require('lazy').setup({
 
   require 'kickstart/plugins/render-markdown',
 
-  require 'kickstart/plugins/markdown-preview',
+  -- require 'kickstart/plugins/markdown-preview',
 
-  require 'kickstart/plugins/obsidian',
+  -- require 'kickstart/plugins/obsidian',
 
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
